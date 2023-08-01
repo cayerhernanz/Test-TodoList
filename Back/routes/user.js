@@ -5,7 +5,7 @@ const userController = require('../controllers/user');
 const passwordVerification = require('../middleware/passwordVerification');
 
 //routes signin et login
-router.post('/signin', passwordVerification, userController.signin);
-route.post('/login', userController.login);
+router.post('/signin', passwordVerification, userController.signIn);
+router.post('/login', userController.logIn);
 
-module.exports= router;
+module.exports = router;

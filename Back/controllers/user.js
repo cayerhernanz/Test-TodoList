@@ -5,7 +5,7 @@ const tokenKey = process.env.TOKEN_SECRET;
 const User = require('../models/user');
 
 //Signin
-exports.signin = (req, res, next) => {
+exports.signIn = (req, res, next) => {
     bcrypt.hash(req.body.password, 10)
     .then(hash => {
         const user = new User({
@@ -21,7 +21,7 @@ exports.signin = (req, res, next) => {
 } 
 
 //Login
-exports.login = (req, res, next) => {
+exports.logIn = (req, res, next) => {
     User.findOne({nickname: req.body.email})
     .then(user => {
         if (user === null){
@@ -50,3 +50,8 @@ exports.login = (req, res, next) => {
     .catch(error => { res.status(500).json({error})});
 }
 
+//Recuperer la liste des utilisateurs
+
+//Recuperer le profil d'un utilisateur
+
+//Recuperer les users d'une tâche
