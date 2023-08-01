@@ -1,0 +1,31 @@
+#user{
+    padding: 1%;
+   h2{
+    color: $color-secondary;
+   }
+}
+
+#userName{
+    display: flex;
+    flex-flow: row nonwrap;
+    justify-content: space-between;
+    width: 40%;
+    padding:1% 0 1% 2%;
+    h3{
+        color: $color-primary;
+    }
+    h4{
+        font-weight: normal;
+        color: $color-tipography;
+    }
+}
+
+.userCurrentTasks{
+    h2{
+        color: $color-secondary;
+    }
+    padding: 1%;
+    border: 10px double $color-primary;
+    border-radius: 5px;
+    margin: 5px 10px 5px 10px
+}

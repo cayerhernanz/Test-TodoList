@@ -1,0 +1,14 @@
+nav{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5%;
+    padding-right: 4%;
+    a{
+        text-decoration: none;
+        color: $color-tipography;
+        &:hover{
+            font-weight: bold;
+            color: $color-tertiary;
+        }
+    }
+}

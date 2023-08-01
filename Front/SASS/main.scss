@@ -1,0 +1,24 @@
+@import "./abstracts/variables";
+
+@import "./base/box-sizing";
+@import "./base/typography";
+
+@import "./components/navbar";
+@import "./components/button";
+@import "./components/tasklist";
+@import "./components/addtaskbutton";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/login";
+@import "./layout/taskform";
+
+@import "./pages/index";
+@import "./pages/signin";
+@import "./pages/homepage";
+@import "./pages/alltask";
+@import "./pages/userlist";
+@import "./pages/userpage";
+@import "./pages/taskpage";
+@import "./pages/createtask";
+@import "./pages/modifytask";

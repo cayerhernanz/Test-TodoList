@@ -1,0 +1,35 @@
+.tasklist{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 1% 0 1%;
+    &__task{
+        color: $color-tipography;
+        text-decoration: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        border: 3px solid $color-tipography;
+        padding: 5px 0 5px 0;
+        h3{
+            color: $color-primary;
+            border-right: 2px solid $color-tipography;
+            border-left: 2px solid $color-tipography;
+            margin: 0;
+            width: 33%;
+            height: 100%;
+            text-align: center;
+        }
+        h4{
+            margin: 0;
+            width: 22%;
+            border-right: 2px solid $color-tipography;
+        }
+        &:hover{
+            border: 3px solid $color-tertiary;
+            cursor: pointer;
+        }
+        
+    }
+}

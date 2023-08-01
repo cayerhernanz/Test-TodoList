@@ -1,0 +1,11 @@
+#taskCreation{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#taskFormTitle{
+    color: $color-primary;
+    padding: 2% 0 2% 1%;
+}

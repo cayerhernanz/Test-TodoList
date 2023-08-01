@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    flex-flow: row non wrap;
+    justify-content: space-around;
+    align-content: center;
+    border-bottom: 2px solid $color-primary;
+    padding: 1% 0 0 0;
+    h1{
+        color: $color-primary;
+        font-size: 75px;
+        margin: 0;
+        padding: 1%;
+    }
+    
+}
+
+.header{
+    &__out{
+        &__nav{
+            display: none;
+        }
+        &__user{
+            display: none;
+        }
+    }
+
+    &__connected{
+        &__user{
+            a{
+                text-decoration: none;
+                color: $color-secondary;
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

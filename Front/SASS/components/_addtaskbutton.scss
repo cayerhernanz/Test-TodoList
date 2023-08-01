@@ -1,0 +1,35 @@
+.addTaskButton{
+    text-decoration: none;
+    background: rgb(118,88,152);
+    background: linear-gradient(228deg, rgba(118,88,152,1) 0%, rgba(82,208,83,1) 80%, rgba(255,255,255,1) 100%);
+    width: 300px;
+    height: 55px;
+    padding: 1%;
+    border-radius: 32px;
+    box-shadow: 0 0 5px 1px darken($color: $color-tipography, $amount: 10%);
+    position: relative;
+    bottom: 75px;
+    left: 85%;
+    z-index: 1;
+    color: $color-background;
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+    &::after{
+        content: "";
+        border-radius: 32px;
+        z-index: -1;
+        background: linear-gradient(10deg, lighten($color: rgba(118,88,152,1), $amount: 5%), lighten($color: rgba(82,208,83,1), $amount: 5%));
+        box-shadow: 0 0 5px 1px darken($color: $color-tipography, $amount: 40%);
+        opacity: 0;
+        transition: opacity 250ms ease-in;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0%;
+        left: 0;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,11 @@
+#taskModification{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#taskModTitle{
+    color: $color-primary;
+    padding: 2% 0 2% 1%;
+}

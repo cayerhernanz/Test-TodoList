@@ -1,0 +1,22 @@
+.button{
+    background: rgb(118,88,152);
+    background: linear-gradient(228deg, rgba(118,88,152,1) 0%, rgba(82,208,83,1) 80%, rgba(255,255,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    border-radius: 50px;
+    border: 1px solid $color-tipography;
+    &:hover{
+        border: 1px solid $color-tertiary;
+        cursor: pointer;
+        p{
+            font-weight: bold;
+        }
+    }
+    p{
+        color: $color-background;
+        font-size: 16px;
+        margin: 0;
+        padding: 10px 0 10px 0;
+    }
+}

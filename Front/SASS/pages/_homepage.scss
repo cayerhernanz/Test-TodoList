@@ -1,0 +1,13 @@
+#currentTask{
+    height: 500px;
+    padding: 3% 2% 3% 2%;
+    border: 10px double $color-primary;
+    border-radius: 5px;
+    margin-top: 5px;
+
+    h2{
+        color: $color-secondary;
+        margin: 0;
+        padding-bottom: 3%;
+    }
+}

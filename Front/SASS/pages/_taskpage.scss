@@ -1,0 +1,38 @@
+.task__info{
+    padding: 2% 0 2% 3%;
+    h2{
+        color: $color-primary;
+        span{
+            font-weight: bold;
+        }
+    }
+    span{
+        color: $color-tipography;
+        font-weight: normal;
+    }
+    h3{
+        color: $color-secondary;
+    }
+    ul{
+        display: flex;
+        flex-flow: column wrap;
+        list-style: none;
+    }
+    li{
+        padding: 15px;
+        a{
+            text-decoration: none;
+            color: $color-tipography;
+            &:hover{
+                color: $color-tertiary;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#modification{
+    padding: 3%;
+    display: flex;
+    justify-content: flex-end;
+}

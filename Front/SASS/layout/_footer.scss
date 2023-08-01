@@ -1,0 +1,26 @@
+footer{
+    background-color: $color-tipography;
+    padding: 1%;
+    h2{
+        color: $color-primary;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0%;
+        padding-bottom: 20px;
+    }
+}
+
+.footer{
+    &__credits{
+        color: $color-secondary;
+        h3{
+            font-size: 18px;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+        p{
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.taskForm{
+    padding: 3% 2% 3% 2%;
+    border: 10px double $color-primary;
+    border-radius: 15px;
+    width: 95%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 15px;
+    label{
+        font-weight: 400;
+    }
+    &__selecSection{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+
+#buttonCreate{
+    color: $color-background;
+    margin-top: 25px;
+    height: 30px;
+}
+
+#buttonModify{
+    color: $color-background;
+    margin-top: 25px;
+    height: 30px;
+}
