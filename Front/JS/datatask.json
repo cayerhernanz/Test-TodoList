@@ -9,6 +9,7 @@
     "modificationDate" : "02/08/2023",
     "endDate": "03/08/2023",
     "creator": "Pablo",
+    "user_id": "123",
     "description" : "Faire la vaiselle dans la cuisine",
     "assignedTo" : [
         {"nickname" : "Pedro", "user_id": "125"}
@@ -24,10 +25,11 @@
     "modificationDate" : "01/08/2023",
     "endDate": "03/08/2023",
     "creator": "Juan",
+    "user_id": "124",
     "description" : "Faire la vaiselle dans la cuisine",
     "assignedTo" : [
         {"nickname" : "Pedro", "user_id": "125"},
-        {"nickname" : "Pablo", "user_id": "124"}
+        {"nickname" : "Pablo", "user_id": "123"}
     ]
 },
 {
@@ -40,10 +42,11 @@
     "modificationDate" : "01/08/2023",
     "endDate": "03/08/2023",
     "creator": "Juan",
+    "user_id": "124",
     "description" : "Faire la vaiselle dans la cuisine",
     "assignedTo" : [
         {"nickname" : "Pedro", "user_id": "125"},
-        {"nickname" : "Pablo", "user_id": "124"}
+        {"nickname" : "Pablo", "user_id": "123"}
     ]
 }
 ]

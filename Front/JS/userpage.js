@@ -29,7 +29,7 @@ const tasksReturn = async() => {
     .then((APIresults) => {
         console.log('APIresults', APIresults);
         assignedTasksDisplay(APIresults);
-        // createdTasksDisplay(APIresults);
+        createdTasksDisplay(APIresults);
     })
     .catch((error) => console.log(error));
 }
@@ -41,7 +41,10 @@ function assignedTasksDisplay(tasks){
         //Recupérer la lsites des users assignés
         let assignedUsers = tasks[task].assignedTo;
         //pour un user dans la liste d'user sassignés
-        for (let user in assignedUsers){
+        for (let user in assignedUsers)
+        // assignedUsers.forEach(user)
+        {
+            console.log(user);
             let assignedUserId = assignedUsers[user].user_id;
             if(assignedUserId === id){
                 let assignedTask = document.createElement("a");
@@ -73,7 +76,38 @@ function assignedTasksDisplay(tasks){
 
 //Recupérer les tÂches crées à l'utilisateur
 function createdTasksDisplay(tasks){
-    
+    let noTaskCreated;
+    for (let task in tasks){
+        let creatorId = tasks[task].user_id;
+        if(creatorId !== id){
+            noTaskCreated = 0;
+        }
+        else{
+            let createdTask = document.createElement("a");
+            createdTask.classList.add("tasklist__task");
+            document.querySelector("#createdTasksList").appendChild(createdTask);
+            createdTask.href = `taskpage.html?id=${tasks[task]._id}`;
+            let createdTaskName = document.createElement("h3");
+            createdTask.appendChild(createdTaskName);
+            createdTaskName.innerHTML = tasks[task].name;
+            let createdTaskStatus = document.createElement("h4");
+            createdTask.appendChild(createdTaskStatus);
+            createdTaskStatus.innerHTML = tasks[task].status;
+            let createdTaskPriority = document.createElement("h4");
+            createdTask.appendChild(createdTaskPriority);
+            createdTaskPriority.innerHTML = tasks[task].priority;
+            let createdTaskEndDate = document.createElement("h4");
+            createdTask.appendChild(createdTaskEndDate);
+            createdTaskEndDate.innerHTML = tasks[task].endDate;
+            noTaskCreated = 1;
+        }
+    }
+    if(noTaskCreated === 0){
+        let noCreationMessage = document.createElement("h3");
+            noCreationMessage.classList.add("userCurrentTasks__message");
+            document.querySelector("#createdTasks").appendChild(noCreationMessage);
+            noCreationMessage.innerHTML = "aucune tâche a été crée!";
+    }
 }
 
 

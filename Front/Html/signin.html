@@ -37,13 +37,20 @@
                     <div class="login__box__nickname">
                         <label for="nickname">Nickname:</label>
                         <input type="text" id="nickname" name="nickname" required>
+                        <p class="login__box__errorMsg" id="nicknameErrorMsg"></p>
                     </div>
                     <div class="login__box__email">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
+                        <p class="login__box__errorMsg" id="emailErrorMsg"></p>
+                    </div>
+                    <div class="login__box__password">
+                        <label for="password">Mot de passe:</label>
+                        <input type="password" id="password" name="password" required>
+                        <p class="login__box__errorMsg" id="passwordErrorMsg"></p>
                     </div>
                     <!-- <input type="submit" class="button"> -->
-                    <div class="button"><p>Créer un compte</p></div>
+                    <div class="button" id="signInButton"><p>Créer un compte</p></div>
                 </form>
             </section>
         </main>
@@ -54,5 +61,6 @@
                 <p>Cayetano Rubio Hernanz</p>
             </div>
         </footer>
+        <script src="../JS/signin.js"></script>
     </body>
 </html>

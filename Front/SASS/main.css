@@ -211,6 +211,17 @@ footer h2 {
   flex-flow: column nowrap;
   justify-content: flex-start;
 }
+.login__box__password {
+  width: 33%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+.login__box__errorMsg {
+  margin: 0;
+  color: red;
+  font-size: 15px;
+}
 .login__redirect {
   display: flex;
   justify-content: flex-end;

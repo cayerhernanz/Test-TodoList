@@ -12,6 +12,6 @@
     "description" : "Faire la vaiselle dans la cuisine",
     "assignedTo" : [
         {"nickname" : "Pedro", "user_id": "125"},
-        {"nickname" : "Pablo", "user_id": "124"}
+        {"nickname" : "Pablo", "user_id": "123"}
     ]
 }
