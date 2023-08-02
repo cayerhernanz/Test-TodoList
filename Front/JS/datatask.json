@@ -1,0 +1,29 @@
+[
+{
+    "name" : "Faire la vaiselle",
+    "category" : "Ménage",
+    "priority": "Moyenne",
+    "creationDate": "01/08/2023",
+    "modificationDate" : "02/08/2023",
+    "endDate": "03/08/2023",
+    "creator": "Pablo",
+    "description" : "Faire la vaiselle dans la cuisine",
+    "assignedTo" : [
+        "Pedro"
+    ]
+},
+{
+    "name" : "Coder le JS",
+    "category" : "Développement",
+    "priority": "Haute",
+    "creationDate": "31/07/2023",
+    "modificationDate" : "01/08/2023",
+    "endDate": "03/08/2023",
+    "creator": "Juan",
+    "description" : "Faire la vaiselle dans la cuisine",
+    "assignedTo" : [
+        "Pedro",
+        "Pablo"
+    ]
+}
+]

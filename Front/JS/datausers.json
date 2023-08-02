@@ -1,0 +1,17 @@
+[
+{
+    "nickname" : "Pedro",
+    "email" : "pedro@hola.com",
+    "password" : "********"
+},
+{
+    "nickname" : "Juan",
+    "email" : "adios@hola.com",
+    "password" : "********"
+},
+{
+    "nickname" : "Pablo",
+    "email" : "pablo@hola.com",
+    "password" : "********"
+}
+]

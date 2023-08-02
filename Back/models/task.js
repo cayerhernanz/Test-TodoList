@@ -13,4 +13,4 @@ const taskSchema = mongoose.Schema({
     assignedTo: {type: [String]},
 });
 
-module.exports = mongoose.model('Sauce', taskSchema);
+module.exports = mongoose.model('Task', taskSchema);
