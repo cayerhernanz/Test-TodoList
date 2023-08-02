@@ -1,0 +1,17 @@
+{
+    "name" : "Coder le JS",
+    "_id" : "1236",
+    "category" : "Développement",
+    "priority": "Haute",
+    "status": "En attente",
+    "creationDate": "31/07/2023",
+    "modificationDate" : "01/08/2023",
+    "endDate": "03/08/2023",
+    "creator": "Pedro",
+    "user_id": "125",
+    "description" : "Faire la vaiselle dans la cuisine",
+    "assignedTo" : [
+        {"nickname" : "Pedro", "user_id": "125"},
+        {"nickname" : "Pablo", "user_id": "124"}
+    ]
+}

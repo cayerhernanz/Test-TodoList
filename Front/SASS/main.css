@@ -367,6 +367,10 @@ footer h2 {
 .userCurrentTasks h2 {
   color: #52d053;
 }
+.userCurrentTasks__message {
+  color: #e6770b;
+  text-transform: uppercase;
+}
 
 .task__info {
   padding: 2% 0 2% 3%;
@@ -376,6 +380,7 @@ footer h2 {
 }
 .task__info h2 span {
   font-weight: bold;
+  color: #e6770b;
 }
 .task__info span {
   color: #000000;
@@ -383,6 +388,15 @@ footer h2 {
 }
 .task__info h3 {
   color: #52d053;
+}
+.task__info a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: normal;
+}
+.task__info a:hover {
+  color: #e6770b;
+  font-weight: bold;
 }
 .task__info ul {
   display: flex;

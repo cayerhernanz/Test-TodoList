@@ -36,26 +36,28 @@
                 <h2>Profil de:</h2>
                 <!-- Affichage dynamique de l'utilisateur -->
                 <div id="userName">
-                    <h3>Nickname</h3>
-                    <h4>Email</h4>
+                    <h3>Nickname: <span class="nickname"></span></h3>
+                    <h4>Email: <span class="email"></span></h4>
                 </div>
             </section>
-            <section class="userCurrentTasks">
+            <section class="userCurrentTasks" id="toDoTasks">
                 <h2>Tâches à réaliser:</h2>
                 <!-- Affichage dynamique des tâches assignées à l'utilisateur-->
-                <div class="tasklist">
-                    <a href="#" class="tasklist__task">
-                        <h3>Nom</h3>
+                <!-- <h3 class="userCurrentTasks__message">Aucune tâche à réaliser!</h3> -->
+                <div class="tasklist" id="toDoTaskList">
+                   <!-- <a href="#" class="tasklist__task">
+                        <h4>Nom</h4>
                         <h4>Statut</h4>
                         <h4>Priorité</h4>
                         <h4>Date de rendu</h4>
-                    </a>
+                    </a> -->
                 </div>
             </section>
-            <section class="userCurrentTasks">
+            <section class="userCurrentTasks" id="createdTasks">
                 <h2>Tâches crées:</h2>
                 <!-- Affichage dynamique des tâches crées par l'utilisateur-->
-                <div class="tasklist">
+                <!-- <h3 class="userCurrentTasks__message">Aucune tâche crée!</h3> -->
+                <div class="tasklist" id="createdTasksList">
                     <a href="#" class="tasklist__task">
                         <h3>Nom</h3>
                         <h4>Statut</h4>
@@ -74,5 +76,6 @@
                 <p>2023</p>
             </div>
         </footer>
+        <script src="../JS/userpage.js"></script>
     </body>
 </html>

@@ -24,6 +24,10 @@
     h2{
         color: $color-secondary;
     }
+    &__message{
+        color: $color-tertiary;
+        text-transform: uppercase;
+    }
     padding: 1%;
     border: 10px double $color-primary;
     border-radius: 5px;

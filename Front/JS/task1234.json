@@ -1,0 +1,17 @@
+{
+    "name" : "Faire la vaiselle",
+    "_id" : "1234",
+    "category" : "Ménage",
+    "priority": "Moyenne",
+    "status": "fini",
+    "creationDate": "01/08/2023",
+    "modificationDate" : "02/08/2023",
+    "endDate": "03/08/2023",
+    "user_id": "123",
+    "creator": "Pablo",
+    "description" : "Faire la vaiselle dans la cuisine",
+    "assignedTo" : [
+        {"nickname" : "Pedro", "user_id": "125"},
+        {"nickname" : "Pablo", "user_id": "124"}
+    ]
+}

@@ -14,7 +14,7 @@ exports.getAllTasks = (req, res, next) => {
 //Recuperer une tâche
 exports.getOneTask = (req, res, next) => {
     Task.findOne({
-        name: req.params.name
+        _id: req.params.id
     })
     .then((task) => {
         return res.status(200).json(task);
@@ -29,13 +29,13 @@ exports.getOneTask = (req, res, next) => {
 //créer un tâche
 exports.createTask = (req, res, next) => {
     const taskObject = JSON.parse(req.body.sauce);
-    delete taskObject._name;
-    delete taskObject._creator;
+    delete taskObject._id;
+    delete taskObject._userId;
     const currentDate = new Date();
     const todayDate = currentDate.getDate();
     const task = new Task({
         ...taskObject,
-        creator: res.locals.auth.nickname,
+        userId: res.locals.auth.userId,
         creationDate: todayDate,
         modificationDate: todayDate,
     });
@@ -56,7 +56,8 @@ exports.modifyTask = (req, res, next) => {
     delete taskObject._modificationDate;
     const currentDate = new Date();
     const todayDate = currentDate.getDate();
-    Task.finOne({_name: req.params.name})
+    delete sauceObject._userId;
+    Task.finOne({_id: req.params.id})
     .then((task) => {
         taskObject._modificationDate = todayDate;
         Task.updateOne({_name:req.params.id}, {...taskObject, _name: req.params.name})

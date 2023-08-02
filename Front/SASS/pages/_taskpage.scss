@@ -4,6 +4,7 @@
         color: $color-primary;
         span{
             font-weight: bold;
+            color: $color-tertiary;
         }
     }
     span{
@@ -12,6 +13,15 @@
     }
     h3{
         color: $color-secondary;
+    }
+    a{
+        text-decoration: none;
+        color: $color-tipography;
+        font-weight: normal;
+        &:hover{
+            color: $color-tertiary;
+            font-weight: bold;
+        }
     }
     ul{
         display: flex;

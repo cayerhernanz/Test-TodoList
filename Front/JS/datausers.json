@@ -1,15 +1,18 @@
 [
 {
+    "user_id" : "125",
     "nickname" : "Pedro",
     "email" : "pedro@hola.com",
     "password" : "********"
 },
 {
+    "user_id" : "124",
     "nickname" : "Juan",
     "email" : "adios@hola.com",
     "password" : "********"
 },
 {
+    "user_id" : "123",
     "nickname" : "Pablo",
     "email" : "pablo@hola.com",
     "password" : "********"
