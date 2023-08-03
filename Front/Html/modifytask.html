@@ -34,17 +34,20 @@
         <main id="taskModification">
             <!-- Affichage dynamique de la tâche en recuperant celle-ci -->
             <h2 id="taskModTitle">Modifier la tâche</h2>
-            <form method="put" class="taskForm" id="modificationForm">
+            <form method="post" class="taskForm" id="modificationForm">
                 <label for="taskName">Nom: </label>
                 <input type="text" id="taskName" name="taskName" required/>
+                <p class="taskForm__errorMsg" id="nameErrorMsg"></p>
 
                 <label for="taskCategory">Catégorie: </label>
                 <input type="text" id="taskCategory" name="taskCategory" required/>
+                <p class="taskForm__errorMsg" id="categoryErrorMsg"></p>
 
                 <label for="taskDescription">Description: </label>
                 <textarea" id="taskDescription" name="taskDescription" required rows="20" cols="33"
                 placeholder="Décrivez la tâche">
                 </textarea>
+                <p class="taskForm__errorMsg" id="descriptionErrorMsg"></p>
 
                 <fieldset class="taskForm__selectSection">
                     <label for="taskStatus">Statut: </label>

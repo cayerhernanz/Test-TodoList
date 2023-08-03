@@ -49,6 +49,8 @@ createTaskBtn.addEventListener("click", function(event){
             // priority : voir comment recuperer le statut, en attente de changment des valeurs API (valeur ne chiffre)
             // status : idem
             creationDate : currentDate,
+            modificationDate : currentDate,
+            endDate : taskEndDate,
             description : taskDescription,
             //creator : attendre API fonctionnelle et verification pour pouvoir l'ajouter
             //user_id : idem
@@ -78,7 +80,7 @@ createTaskBtn.addEventListener("click", function(event){
 function formVerification(){
     let nameErrorMsg = document.querySelector("#nameErrorMsg");
     let categoryErrorMsg = document.querySelector("#categoryErrorMsg");
-    let descriptionErrorMsg = document.querySelector("#categoryErrorMsg");
+    let descriptionErrorMsg = document.querySelector("#descriptionErrorMsg");
     let dateErrorMsg = document.querySelector("#dateErrorMsg");
     let nameValidated;
     let categoryValidated;
