@@ -73,17 +73,17 @@
                 <!-- Créer une liste dynamique de la user list et en faire une checkbox -->
                 <fieldset>
                     <legend>Assigner à:</legend>
-                    <div>
-                        <label for="assignedUser1">Manolo</label>
+                    <div id="userOptions">
+                        <!-- <label for="assignedUser1">Manolo</label>
                         <input type="checkbox" id="assignedUser1" name="assignedUser1" value="Manolo"/>
                         <label for="assignedUser2">Pablo</label>
-                        <input type="checkbox" id="assignedUser2" name="assignedUser2" value="Pedro"/>
+                        <input type="checkbox" id="assignedUser2" name="assignedUser2" value="Pedro"/> -->
                     </div>
                 </fieldset>
             <!-- Récupérer en JS le current user pour l'envoyer
             <label for="creator">Crée par: </label>
-            <input type="text" id="creator" name="creator"/> -->   
-                <input type="submit" class="button" id="buttonCreate">
+            <input type="text" id="creator" name="creator"/> -->
+                <div class="button" id="buttonCreate"><p>Créer une tâche</p></div>   
             </form> 
         </main>
 
@@ -95,5 +95,6 @@
                 <p>2023</p>
             </div>
         </footer>
+        <script src="../JS/createtask.js"></script>
     </body>
 </html>
