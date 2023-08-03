@@ -45,3 +45,10 @@ function taskDisplay(task){
 }
 
 taskReturn();
+
+//Bouton de modification
+let redirectBtn = document.getElementById("goToModificationBtn");
+redirectBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    window.location.href = `modifytask.html?id=${id}`;
+})
