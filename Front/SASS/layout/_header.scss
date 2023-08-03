@@ -36,3 +36,14 @@ header{
         }
     }
 }
+
+.logOutBtn{
+    font-size: 15px;
+    margin: 0;
+    &:hover{
+        cursor: pointer;
+        color: $color-tertiary;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}

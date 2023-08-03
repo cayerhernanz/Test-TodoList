@@ -105,7 +105,6 @@ modifyTaskBtn.addEventListener('click', function(event){
     }
 })
 
-
 //Verification des changements
 function formVerification(){
     let nameErrorMsg = document.querySelector("#nameErrorMsg");
@@ -146,4 +145,16 @@ function formVerification(){
     else{
         formValidated = false;
     }
+}
+
+//LogOut
+let logOutBtn = document.querySelector(".logOutBtn");
+logOutBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    logOut();
+})
+
+function logOut(){
+    localStorage.clear;
+    window.location = "index.html";
 }

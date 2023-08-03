@@ -150,6 +150,17 @@ header h1 {
   font-weight: bold;
 }
 
+.logOutBtn {
+  font-size: 15px;
+  margin: 0;
+}
+.logOutBtn:hover {
+  cursor: pointer;
+  color: #e6770b;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 footer {
   background-color: #000000;
   padding: 1%;
