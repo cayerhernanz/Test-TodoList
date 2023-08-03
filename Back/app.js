@@ -2,13 +2,10 @@ const express = require('express');
 const app = express();
 
 require('dotenv').config();
-const mongoCred = process.env.MONGO_DB;
 
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
-mongoose.connect(mongoCred,
-    {userNewUrlParser: true,
-    userUnifiedTopology: true})
+mongoose.connect(process.env.MONGO_DB)
     .then(() => console.log('Connexion à MongoDb réussie!'))
     .catch(() => console.log('Connexion à MongoDB échouée!'));
 

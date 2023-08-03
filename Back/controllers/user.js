@@ -11,7 +11,7 @@ exports.signIn = (req, res, next) => {
         const user = new User({
             nickname: req.body.nickname,
             email: req.body.email,
-            password: hash
+            password: hash,
         });
         user.save()
         .then(() => res.status(201).json({ message: 'Utilisateur crée.'}))
@@ -22,7 +22,7 @@ exports.signIn = (req, res, next) => {
 
 //Login
 exports.logIn = (req, res, next) => {
-    User.findOne({nickname: req.body.email})
+    User.findOne({nickname: req.body.nickname})
     .then(user => {
         if (user === null){
             res.status(401).json({message: 'identifiant/mot de passe incorrects'});
@@ -53,5 +53,3 @@ exports.logIn = (req, res, next) => {
 //Recuperer la liste des utilisateurs
 
 //Recuperer le profil d'un utilisateur
-
-//Recuperer les users d'une tâche

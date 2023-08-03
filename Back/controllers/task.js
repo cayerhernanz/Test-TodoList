@@ -24,20 +24,27 @@ exports.getOneTask = (req, res, next) => {
     });
 };
 
-//Recuperer tâches d'un user
+//Recuperer les taches crées par un user
+exports.getUserTasks = (req, res, next) => {
+    Task.find({
+        user_Id: req.params.user_Id
+    })
+    .then((task) => {
+        return res.status(200).json(task);
+    })
+    .catch((error) => {
+        return res.status(404).json({error});
+    });
+}
 
 //créer un tâche
 exports.createTask = (req, res, next) => {
     const taskObject = JSON.parse(req.body.sauce);
     delete taskObject._id;
-    delete taskObject._userId;
-    const currentDate = new Date();
-    const todayDate = currentDate.getDate();
+    delete taskObject._user_Id;
     const task = new Task({
         ...taskObject,
-        userId: res.locals.auth.userId,
-        creationDate: todayDate,
-        modificationDate: todayDate,
+        user_Id: res.locals.auth.userId,
     });
     task.save()
     .then(() => {

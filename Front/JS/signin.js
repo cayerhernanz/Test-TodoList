@@ -2,7 +2,7 @@
 //RegExp éléments
 let rxpNickname = new RegExp(/^[a-zA-Z0-9\s,'-]*$/);
 let rxpEmail = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
-let rxpPassword = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+let rxpPassword = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{10,})/);
 
 //Création de compte
 let signInButton = document.querySelector("#signInButton");
