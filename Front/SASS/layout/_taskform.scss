@@ -16,6 +16,11 @@
         justify-content: space-between;
         gap: 10px;
     }
+    &__errorMsg{
+        margin: 0;
+        color: red;
+        font-size: 14px
+    }
 }
 
 #buttonCreate{

@@ -256,6 +256,11 @@ footer h2 {
   justify-content: space-between;
   gap: 10px;
 }
+.taskForm__errorMsg {
+  margin: 0;
+  color: red;
+  font-size: 14px;
+}
 
 #buttonCreate {
   color: #ffffff;

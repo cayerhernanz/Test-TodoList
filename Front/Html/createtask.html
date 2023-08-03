@@ -33,17 +33,20 @@
 
         <main id="taskCreation">
             <h2 id="taskFormTitle">Nouvelle tâche</h2>
-            <form method="post" class="taskForm">
+            <form method="post" class="taskForm" id="taskForm">
                 <label for="taskName">Nom: </label>
                 <input type="text" id="taskName" name="taskName" required/>
+                <p class="taskForm__errorMsg" id="nameErrorMsg"></p>
 
                 <label for="taskCategory">Catégorie: </label>
                 <input type="text" id="taskCategory" name="taskCategory" required/>
+                <p class="taskForm__errorMsg" id="categoryErrorMsg"></p>
 
                 <label for="taskDescription">Description: </label>
                 <textarea" id="taskDescription" name="taskDescription" required rows="20" cols="33"
-                placeholder="Décrivez la tâche">
+                placeholder="Décrivez la tâche" maxlength="280">
                 </textarea>
+                <p class="taskForm__errorMsg" id="descriptionErrorMsg"></p>
 
                 <fieldset class="taskForm__selectSection">
                     <label for="taskStatus">Statut: </label>
@@ -67,8 +70,9 @@
                     <input type="date" id="modificationDate" name="modificationDate" required/> -->
 
                     <label for="endDate">Date de rendu: </label>
-                    <input type="date" id="endDate" name="endDate" required />
+                    <input type="date" id="endDate" name="endDate" required/>
                 </fieldset>
+                <p class="taskForm__errorMsg" id="dateErrorMsg"></p>
 
                 <!-- Créer une liste dynamique de la user list et en faire une checkbox -->
                 <fieldset>
